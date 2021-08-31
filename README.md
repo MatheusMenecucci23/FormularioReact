@@ -1,3 +1,8 @@
+# Formulário simples de cadastro constrúido com React
+![Animação-form-react](https://user-images.githubusercontent.com/72262553/131543646-95533c25-532e-4942-9c75-c1c2edc5b0f2.gif)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
