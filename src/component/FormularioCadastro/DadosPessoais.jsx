@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import { Switch, FormControlLabel } from "@material-ui/core";
 
-function DadosPessoais({aoEnviar, validarCPF1}) {
+function DadosPessoais({aoEnviar, validarCPF}) {
   //const[variavel,a função que altera o estado da variavel setVariavel]
   const [nome, setNome] = useState("");
 
@@ -63,7 +63,7 @@ function DadosPessoais({aoEnviar, validarCPF1}) {
 
         //------erros--------//
         onBlur={(event)=>{
-          const ehValido =validarCPF1(cpf)
+          const ehValido =validarCPF(cpf)
 
           setErros({cpf:ehValido})
         }}

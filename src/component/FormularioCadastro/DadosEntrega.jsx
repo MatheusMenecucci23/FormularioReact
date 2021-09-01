@@ -43,7 +43,7 @@ function DadosEntrega() {
         variant="outlined"
       ></TextField>
       <Button variant="contained" color="primary" type="submit" fullWidth>
-        Cadastrar
+        FINALIZAR CADASTRO
       </Button>
     </form>
   );
