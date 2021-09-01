@@ -5,7 +5,7 @@ import DadosEntrega from "./DadosEntrega";
 import DadosPessoais from "./DadosPessoais";
 import DadosUsuario from "./DadosUsuario";
 
-function FormularioCadastro({ aoEnviar, validarCPF1 }) {
+function FormularioCadastro({aoEnviar, validacoes}) {
   const [etapaAtual, setEtapaAtual] = useState(0);
   const [dadosColetados,setDadosColetados] = useState({})
   //useEffect: uma atualização que é efeita após a renderização
@@ -19,7 +19,7 @@ function FormularioCadastro({ aoEnviar, validarCPF1 }) {
   //array de rotas dos formulários
   const formulario = [
   <DadosUsuario  aoEnviar={coletarDados} />,
-  <DadosPessoais aoEnviar={coletarDados} validarCPF={validarCPF1} />,
+  <DadosPessoais aoEnviar={coletarDados} />,
   <DadosEntrega  aoEnviar={coletarDados}/>,
   <Typography variant="h5">Obrigado pelo cadastro!</Typography>
   ];
