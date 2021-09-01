@@ -10,11 +10,14 @@ class App extends Component {
   render() {
     //variant é o estilo
     //component é a semantica do html
+    //Typography é do Material ui
     return (
       <Container component="article" maxWidth="sm">
+        
         <Typography variant="h3" component="h1" align="center">
           Formulário de Cadastro
         </Typography>
+        {/* indicando os valores que o contexto ira pegar */}
         <ValidacoesCadastro.Provider
           value={{ cpf: validarCPF, senha: validarSenha, nome: validarSenha }}
         >
